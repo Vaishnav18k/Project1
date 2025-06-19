@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+<title>Case Alert System</title>
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+	<body>
+
+	
+
+<div id="root">
+	<div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
+		<ol tabindex="-1"
+			class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]">
+		</ol>
+	</div>
+	<div class="min-h-screen bg-background">
+		<header class="bg-white border-b border-border sticky top-0 z-50 shadow-sm">
+			<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+				<div class="flex items-center space-x-3">
+					<div class="bg-primary p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+							height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+							stroke-linecap="round" stroke-linejoin="round"
+							class="lucide lucide-scale h-6 w-6 text-primary-foreground">
+							<path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+							<path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+							<path d="M7 21h10"></path>
+							<path d="M12 3v18"></path>
+							<path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+						</svg></div><button
+						class="text-xl font-bold text-foreground hover:text-primary transition-colors">Case Alert
+						System</button>
+				</div>
+				<div class="flex items-center space-x-6">
+					<nav class="hidden md:flex space-x-6"><button
+							class="text-muted-foreground hover:text-foreground transition-colors">Home</button><button
+							class="text-muted-foreground hover:text-foreground transition-colors">How It
+							Works</button><button
+							class="text-muted-foreground hover:text-foreground transition-colors">Contact Us</button>
+					</nav>
+					<div class="flex items-center space-x-3"><button
+							class="justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-9 rounded-md px-3 flex items-center space-x-2"><svg
+								xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" class="lucide lucide-user h-4 w-4">
+								<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+								<circle cx="12" cy="7" r="4"></circle>
+							</svg><span>Sign In</span></button></div>
+				</div>
+			</div>
+		</header>
+		<section id="hero" class="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
+			<div class="container mx-auto px-4">
+				<div class="grid md:grid-cols-2 gap-12 items-center">
+					<div class="space-y-6">
+						<div class="space-y-4">
+							<h1 class="text-4xl md:text-5xl font-bold text-foreground leading-tight">Get Notified When
+								Your Case Is Listed</h1>
+							<p class="text-lg text-muted-foreground">Case Alert System automatically checks the Delhi
+								High Court cause list and sends you an email when your name appears. Never miss an
+								important court date again.</p>
+						</div>
+						<div class="bg-white p-6 rounded-lg shadow-lg">
+							<p class="text-center text-muted-foreground mb-4">Sign in to set up your case alerts and
+								never miss a court date.</p><button
+								class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 px-4 w-full bg-primary hover:bg-primary/90 text-primary-foreground font-medium py-3">Sign
+								In to Get Started</button>
+						</div>
+					</div>
+					<div class="flex justify-center">
+						<div class="relative">
+							<div class="bg-white p-8 rounded-2xl shadow-2xl max-w-sm">
+								<div class="flex items-center space-x-3 mb-4"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="lucide lucide-mail h-8 w-8 text-primary">
+										<rect width="20" height="16" x="2" y="4" rx="2"></rect>
+										<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+									</svg>
+									<div>
+										<h3 class="font-semibold text-foreground">Case Alert</h3>
+										<p class="text-sm text-muted-foreground">Delhi High Court</p>
+									</div>
+								</div>
+								<div class="space-y-2">
+									<p class="text-sm text-foreground">Your case has been listed:</p>
+									<p class="text-xs text-muted-foreground">Case No: CRL.A. 1234/2024</p>
+									<p class="text-xs text-muted-foreground">Date: Tomorrow, 10:30 AM</p>
+									<p class="text-xs text-muted-foreground">Courtroom: 15</p>
+									<p class="text-xs text-muted-foreground">Judge: Hon'ble Mr. Justice XYZ</p>
+								</div>
+								<div class="mt-4 flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg"
+										width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+										class="lucide lucide-circle-alert h-4 w-4 text-orange-500">
+										<circle cx="12" cy="12" r="10"></circle>
+										<line x1="12" x2="12" y1="8" y2="12"></line>
+										<line x1="12" x2="12.01" y1="16" y2="16"></line>
+									</svg><span class="text-xs text-orange-600">Urgent: Court appearance required</span>
+								</div>
+							</div>
+							<div
+								class="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full animate-pulse">
+								New</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="how-it-works" class="py-20 bg-white">
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">How It Works</h2>
+					<p class="text-lg text-muted-foreground max-w-2xl mx-auto">Our automated system ensures you never
+						miss an important court date. Here's how we keep you informed.</p>
+				</div>
+				<div class="grid md:grid-cols-3 gap-8">
+					<div
+						class="rounded-lg border bg-card text-card-foreground shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
+						<div class="flex flex-col space-y-1.5 p-6">
+							<div class="relative mx-auto mb-4">
+								<div
+									class="bg-primary p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-user-plus h-8 w-8 text-primary-foreground">
+										<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+										<circle cx="9" cy="7" r="4"></circle>
+										<line x1="19" x2="19" y1="8" y2="14"></line>
+										<line x1="22" x2="16" y1="11" y2="11"></line>
+									</svg></div>
+								<div
+									class="absolute -top-2 -right-2 bg-blue-100 text-primary text-xs font-bold px-2 py-1 rounded-full">
+									01</div>
+							</div>
+							<h3 class="font-semibold tracking-tight text-xl mb-2">Enter Your Details</h3>
+						</div>
+						<div class="p-6 pt-0">
+							<p class="text-sm text-muted-foreground">Provide your name and email address to get started
+								with our case monitoring service.</p>
+						</div>
+						<div class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
+							<div class="w-8 h-0.5 bg-gradient-to-r from-primary to-blue-300"></div>
+						</div>
+					</div>
+					<div
+						class="rounded-lg border bg-card text-card-foreground shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
+						<div class="flex flex-col space-y-1.5 p-6">
+							<div class="relative mx-auto mb-4">
+								<div
+									class="bg-primary p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-search h-8 w-8 text-primary-foreground">
+										<circle cx="11" cy="11" r="8"></circle>
+										<path d="m21 21-4.3-4.3"></path>
+									</svg></div>
+								<div
+									class="absolute -top-2 -right-2 bg-blue-100 text-primary text-xs font-bold px-2 py-1 rounded-full">
+									02</div>
+							</div>
+							<h3 class="font-semibold tracking-tight text-xl mb-2">We Monitor Daily</h3>
+						</div>
+						<div class="p-6 pt-0">
+							<p class="text-sm text-muted-foreground">Our system automatically scans the latest high
+								court cause list every morning for your name.</p>
+						</div>
+						<div class="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
+							<div class="w-8 h-0.5 bg-gradient-to-r from-primary to-blue-300"></div>
+						</div>
+					</div>
+					<div
+						class="rounded-lg border bg-card text-card-foreground shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
+						<div class="flex flex-col space-y-1.5 p-6">
+							<div class="relative mx-auto mb-4">
+								<div
+									class="bg-primary p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round"
+										class="lucide lucide-mail h-8 w-8 text-primary-foreground">
+										<rect width="20" height="16" x="2" y="4" rx="2"></rect>
+										<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+									</svg></div>
+								<div
+									class="absolute -top-2 -right-2 bg-blue-100 text-primary text-xs font-bold px-2 py-1 rounded-full">
+									03</div>
+							</div>
+							<h3 class="font-semibold tracking-tight text-xl mb-2">Instant Alerts</h3>
+						</div>
+						<div class="p-6 pt-0">
+							<p class="text-sm text-muted-foreground">If your name appears in the cause list, you'll
+								receive an immediate email with case details.</p>
+						</div>
+					</div>
+				</div>
+				<div class="mt-16 bg-blue-50 p-8 rounded-lg text-center">
+					<h3 class="text-xl font-semibold text-foreground mb-2">Reliable &amp; Secure</h3>
+					<p class="text-muted-foreground">Your data is protected with industry-standard security measures. We
+						only use your information to provide case alerts and never share it with third parties.</p>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="py-20 bg-gray-50">
+			<div class="container mx-auto px-4">
+				<div class="text-center mb-16">
+					<h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">Contact Us</h2>
+					<p class="text-lg text-muted-foreground max-w-2xl mx-auto">Have questions about our service? Need
+						help with your account? We're here to assist you.</p>
+				</div>
+				<div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+					<div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+						<div class="flex flex-col space-y-1.5 p-6">
+							<h3 class="text-2xl font-semibold leading-none tracking-tight flex items-center space-x-2">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+									fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+									stroke-linejoin="round" class="lucide lucide-message-circle h-5 w-5">
+									<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+								</svg><span>Send us a Message</span></h3>
+							<p class="text-sm text-muted-foreground">Fill out the form below and we'll get back to you
+								as soon as possible.</p>
+						</div>
+						<div class="p-6 pt-0">
+							<form class="space-y-4">
+								<div class="space-y-2"><label
+										class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+										for="contact-name">Name</label><input type="text"
+										class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+										id="contact-name" name="name" placeholder="Your full name" required="" value="">
+								</div>
+								<div class="space-y-2"><label
+										class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+										for="contact-email">Email</label><input type="email"
+										class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+										id="contact-email" name="email" placeholder="Your email address" required=""
+										value=""></div>
+								<div class="space-y-2"><label
+										class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+										for="contact-message">Message</label><textarea
+										class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+										id="contact-message" name="message" placeholder="How can we help you?" rows="4"
+										required=""></textarea></div><button
+									class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+									type="submit">Send Message</button>
+							</form>
+						</div>
+					</div>
+					<div class="space-y-6">
+						<div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+							<div class="flex flex-col space-y-1.5 p-6">
+								<h3
+									class="text-2xl font-semibold leading-none tracking-tight flex items-center space-x-2">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round" class="lucide lucide-mail h-5 w-5">
+										<rect width="20" height="16" x="2" y="4" rx="2"></rect>
+										<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+									</svg><span>Email Support</span></h3>
+							</div>
+							<div class="p-6 pt-0">
+								<p class="text-muted-foreground mb-2">For technical support or general inquiries:</p><a
+									href="mailto:support@casealertsystem.com"
+									class="text-primary hover:underline font-medium">support@casealertsystem.com</a>
+								<p class="text-sm text-muted-foreground mt-2">Response time: Within 24 hours</p>
+							</div>
+						</div>
+						<div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+							<div class="flex flex-col space-y-1.5 p-6">
+								<h3 class="text-2xl font-semibold leading-none tracking-tight">Frequently Asked
+									Questions</h3>
+							</div>
+							<div class="p-6 pt-0 space-y-4">
+								<div>
+									<h4 class="font-medium text-foreground mb-1">How often do you check the cause list?
+									</h4>
+									<p class="text-sm text-muted-foreground">We check the high court cause list every
+										morning at 6:00 AM.</p>
+								</div>
+								<div>
+									<h4 class="font-medium text-foreground mb-1">Is my data secure?</h4>
+									<p class="text-sm text-muted-foreground">Yes, we use industry-standard encryption
+										and never share your information.</p>
+								</div>
+								<div>
+									<h4 class="font-medium text-foreground mb-1">Is the service free?</h4>
+									<p class="text-sm text-muted-foreground">Yes, our basic alert service is completely
+										free for all advocates.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="bg-slate-900 text-slate-300">
+			<div class="container mx-auto px-4 py-12">
+				<div class="grid md:grid-cols-4 gap-8">
+					<div class="space-y-4">
+						<div class="flex items-center space-x-3">
+							<div class="bg-primary p-2 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+									height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+									stroke-linecap="round" stroke-linejoin="round"
+									class="lucide lucide-scale h-6 w-6 text-primary-foreground">
+									<path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+									<path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path>
+									<path d="M7 21h10"></path>
+									<path d="M12 3v18"></path>
+									<path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path>
+								</svg></div><span class="text-xl font-bold text-white">Case Alert System</span>
+						</div>
+						<p class="text-sm">Helping advocates stay informed with automated case listing notifications
+							from high court cause lists.</p>
+					</div>
+					<div>
+						<h3 class="font-semibold text-white mb-4">Quick Links</h3>
+						<ul class="space-y-2 text-sm">
+							<li><a href="#hero" class="hover:text-white transition-colors">Home</a></li>
+							<li><a href="#how-it-works" class="hover:text-white transition-colors">How It Works</a></li>
+							<li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="font-semibold text-white mb-4">Legal</h3>
+						<ul class="space-y-2 text-sm">
+							<li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+							<li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+							<li><a href="#" class="hover:text-white transition-colors">Cookie Policy</a></li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="font-semibold text-white mb-4">Connect</h3>
+						<div class="flex space-x-4"><a href="mailto:support@casealertsystem.com"
+								class="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors"
+								aria-label="Email"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+									viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+									stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail h-5 w-5">
+									<rect width="20" height="16" x="2" y="4" rx="2"></rect>
+									<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+								</svg></a><a href="#"
+								class="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors"
+								aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+									viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+									stroke-linecap="round" stroke-linejoin="round"
+									class="lucide lucide-linkedin h-5 w-5">
+									<path
+										d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+									</path>
+									<rect width="4" height="12" x="2" y="9"></rect>
+									<circle cx="4" cy="4" r="2"></circle>
+								</svg></a><a href="#"
+								class="p-2 bg-slate-800 rounded-lg hover:bg-slate-700 transition-colors"
+								aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+									viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+									stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5">
+									<path
+										d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+									</path>
+									<path d="M9 18c-4.51 2-5-2-7-2"></path>
+								</svg></a></div>
+					</div>
+				</div>
+				<div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm">
+					<p>© 2024 Case Alert System. All rights reserved.</p>
+					<p class="mt-2 text-slate-400">Built for advocates, by advocates. Ensuring you never miss a court
+						date.</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>
