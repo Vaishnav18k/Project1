@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { SignIn } from "@stackframe/stack";
 import { Footer } from "./LandingComponent/Footer";
 import { Contact } from "./LandingComponent/contact";
+import './globals.css';
 import {
   Scale, User, Mail, Search, CircleAlert,
     MessageCircle, Linkedin, Github 
@@ -62,13 +63,13 @@ export default function Home() {
           </div>
           <div className="flex items-center space-x-6">
             <nav className="hidden md:flex space-x-6">
-              <Link href="#hero" className="text-muted-red-400 hover:text-black transition-colors">
+              <Link href="#hero" className="text-gray-600 hover:text-black transition-colors">
                 Home
               </Link>
-              <Link href="#how-it-works" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="#how-it-works" className="text-gray-600 hover:text-black transition-colors">
                 How It Works
               </Link>
-              <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link href="#contact" className="text-gray-600 hover:text-black transition-colors">
                 Contact Us
               </Link>
             </nav>
@@ -76,7 +77,7 @@ export default function Home() {
               {!user && (
                 <Link 
                   href="/signin"
-                  className="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-black text-white hover:bg-primary/90 h-9 rounded-md px-3 space-x-2"
+                  className="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-black text-white hover:bg-white/20 h-9 rounded-md px-3 space-x-2"
                 >
                   <User className="h-4 w-4" />
                   <span>Sign In</span>
@@ -98,12 +99,12 @@ export default function Home() {
                 <h1 className="text-4xl  md:text-5xl font-bold text-foreground leading-tight">
                   Get Notified When Your Case Is Listed
                 </h1>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-slate-500">
                   Case Alert System automatically checks the Delhi High Court cause list and sends you an email when your name appears. Never miss an important court date again.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-lg">
-                <p className="text-center text-muted-foreground mb-4">
+                <p className="text-center text-slate-500 mb-4">
                   Sign in to set up your case alerts and never miss a court date.
                 </p>
                 <Link 
@@ -126,10 +127,10 @@ export default function Home() {
                   </div>
                   <div className="space-y-2">
                     <p className="text-sm text-foreground">Your case has been listed:</p>
-                    <p className="text-xs text-muted-foreground">Case No: CRL.A. 1234/2024</p>
-                    <p className="text-xs text-muted-foreground">Date: Tomorrow, 10:30 AM</p>
-                    <p className="text-xs text-muted-foreground">Courtroom: 15</p>
-                    <p className="text-xs text-muted-foreground">Judge: Hon'ble Mr. Justice XYZ</p>
+                    <p className="text-xs text-slate-500">Case No: CRL.A. 1234/2024</p>
+                    <p className="text-xs text-slate-500">Date: Tomorrow, 10:30 AM</p>
+                    <p className="text-xs text-slate-500">Courtroom: 15</p>
+                    <p className="text-xs text-slate-500">Judge: Hon'ble Mr. Justice XYZ</p>
                   </div>
                   <div className="mt-4 flex items-center space-x-2">
                     <CircleAlert className="h-4 w-4 text-orange-500" />

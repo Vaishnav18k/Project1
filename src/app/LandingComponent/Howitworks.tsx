@@ -9,23 +9,23 @@ export function Howitworks() {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             How It Works
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-slate-500 max-w-2xl mx-auto">
             Our automated system ensures you never miss an important court date.
             Here's how we keep you informed.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="rounded-lg border bg-card text-card-foreground shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
+          <div className="rounded-lg border bg-card text-card-slate-300 shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
             <div className="flex flex-col space-y-1.5 p-6">
               <div className="relative mx-auto mb-4">
-                <div className="bg-primary p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+                <div className="bg-black p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="currentColor"
+                    stroke="white"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -46,26 +46,26 @@ export function Howitworks() {
               </h3>
             </div>
             <div className="p-6 pt-0">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-slate-500">
                 Provide your name and email address to get started with our case
                 monitoring service.
               </p>
             </div>
             <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-              <div className="w-8 h-0.5 bg-gradient-to-r from-primary to-blue-300"></div>
+              <div className="w-8 h-0.5 bg-gradient-to-r from-black to-blue-300"></div>
             </div>
           </div>
           <div className="rounded-lg border bg-card text-card-foreground shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
             <div className="flex flex-col space-y-1.5 p-6">
               <div className="relative mx-auto mb-4">
-                <div className="bg-primary p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+                <div className="bg-black p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="currentColor"
+                    stroke="white"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -84,26 +84,26 @@ export function Howitworks() {
               </h3>
             </div>
             <div className="p-6 pt-0">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-slate-500">
                 Our system automatically scans the latest high court cause list
                 every morning for your name.
               </p>
             </div>
             <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-              <div className="w-8 h-0.5 bg-gradient-to-r from-primary to-blue-300"></div>
+              <div className="w-8 h-0.5 bg-gradient-to-r from-black to-blue-300"></div>
             </div>
           </div>
           <div className="rounded-lg border bg-card text-card-foreground shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
             <div className="flex flex-col space-y-1.5 p-6">
               <div className="relative mx-auto mb-4">
-                <div className="bg-primary p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+                <div className="bg-black p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="currentColor"
+                    stroke="white"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -122,7 +122,7 @@ export function Howitworks() {
               </h3>
             </div>
             <div className="p-6 pt-0">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-slate-500">
                 If your name appears in the cause list, you'll receive an
                 immediate email with case details.
               </p>
