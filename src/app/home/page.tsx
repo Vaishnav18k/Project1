@@ -25,6 +25,7 @@ export default function page1() {
   const router = useRouter();
    const handleSignInClick = () => {
     router.push('/signin');
+    router.push('/dashboard')
   };
 
   return (
@@ -53,6 +54,12 @@ export default function page1() {
                   Home
                 </Link>
                 <Link
+                  href="/dashboard"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Dashboard
+                </Link>
+                <Link
                   href="#how-it-works"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
@@ -64,19 +71,14 @@ export default function page1() {
                 >
                   Contact Us
                 </Link>
-                <Link
-                  href="#"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  Dashboard
-                </Link>
+                
                 <UserButton />
               </nav>
               <div className="flex items-center space-x-3">
                 {!user && (
                   <Link
                     href="/signout"
-                    className="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-black text-white hover:bg-primary/90 h-9 rounded-md px-3 space-x-2"
+                    className="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-black text-slate-50 hover:bg-slate-800 h-9 rounded-md px-3 space-x-2"
                   >
                     <User className="h-4 w-4" />
                     <span>Sign In</span>
