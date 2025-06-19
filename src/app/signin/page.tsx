@@ -1,7 +1,7 @@
 import { SignIn } from '@stackframe/stack'
 import React from 'react'
 
-export function page() {
+export default function SignInpage() {
   return (
     <div className="md:container md:mx-auto p-4">
        <h1 className="text-3xl font-bold mb-8 text-gray-800"></h1>
@@ -11,4 +11,3 @@ export function page() {
   )
 }
 
-export default page;
