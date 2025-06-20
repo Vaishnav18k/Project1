@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@stackframe/stack": "^2.8.12",
+    "convex": "^1.24.8",
     "lucide-react": "^0.517.0",
     "next": "15.3.3",
     "react": "^19.0.0",

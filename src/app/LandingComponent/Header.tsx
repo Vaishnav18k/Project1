@@ -21,6 +21,7 @@ export function Header() {
       const router = useRouter();
        const handleSignInClick = () => {
         router.push('/signin');
+        router.push('/home');
         router.push('/dashboard')
       };
   return (
@@ -41,7 +42,7 @@ export function Header() {
             <div className="flex items-center space-x-6">
               <nav className="hidden md:flex space-x-6">
                 <Link
-                  href="#hero"
+                  href="/home"
                   className="text-gray-600 hover:text-black transition-colors"
                 >
                   Home

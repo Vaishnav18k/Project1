@@ -8,13 +8,13 @@ export function Contact() {
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Contact Us
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-slate-500 max-w-2xl mx-auto">
             Have questions about our service? Need help with your account? We're
             here to assist you.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="rounded-lg border border-gray-300/60 bg-white  text-card-white shadow-sm">
+          <div className="rounded-lg border border-gray-300/60 bg-white   text-card-white shadow-sm">
             <div className="flex flex-col space-y-1.5 p-6">
               <h3 className="text-2xl font-semibold leading-none tracking-tight flex items-center space-x-2">
                 <svg
@@ -33,7 +33,7 @@ export function Contact() {
                 </svg>
                 <span>Send us a Message</span>
               </h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm text-slate-500">
                 Fill out the form below and we'll get back to you as soon as
                 possible.
               </p>
@@ -127,7 +127,7 @@ export function Contact() {
                 </h3>
               </div>
               <div className="p-6 pt-0">
-                <p className="text-muted-foreground mb-2">
+                <p className="text-slate-500 mb-2">
                   For technical support or general inquiries:
                 </p>
                 <a
@@ -136,7 +136,7 @@ export function Contact() {
                 >
                   support@casealertsystem.com
                 </a>
-                <p className="text-sm text-muted-foreground mt-2">
+                <p className="text-sm text-slate-500 mt-2">
                   Response time: Within 24 hours
                 </p>
               </div>
@@ -152,7 +152,7 @@ export function Contact() {
                   <h4 className="font-medium text-foreground mb-1">
                     How often do you check the cause list?
                   </h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-slate-500">
                     We check the high court cause list every morning at 6:00 AM.
                   </p>
                 </div>
@@ -160,7 +160,7 @@ export function Contact() {
                   <h4 className="font-medium text-foreground mb-1">
                     Is my data secure?
                   </h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-slate-500">
                     Yes, we use industry-standard encryption and never share
                     your information.
                   </p>
@@ -169,7 +169,7 @@ export function Contact() {
                   <h4 className="font-medium text-foreground mb-1">
                     Is the service free?
                   </h4>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-slate-500">
                     Yes, our basic alert service is completely free for all
                     advocates.
                   </p>
