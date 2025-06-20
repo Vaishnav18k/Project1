@@ -15,7 +15,7 @@ export function Howitworks() {
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="rounded-lg border bg-card text-card-slate-300 shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
+          <div className="rounded-lg border border-gray-300/60 bg-white text-card-slate-300 shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
             <div className="flex flex-col space-y-1.5 p-6">
               <div className="relative mx-auto mb-4">
                 <div className="bg-black p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
@@ -55,7 +55,7 @@ export function Howitworks() {
               <div className="w-8 h-0.5 bg-gradient-to-r from-black to-blue-300"></div>
             </div>
           </div>
-          <div className="rounded-lg border bg-card text-card-foreground shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
+          <div className="rounded-lg border border-gray-300/60 bg-white text-card-foreground shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
             <div className="flex flex-col space-y-1.5 p-6">
               <div className="relative mx-auto mb-4">
                 <div className="bg-black p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
@@ -93,7 +93,7 @@ export function Howitworks() {
               <div className="w-8 h-0.5 bg-gradient-to-r from-black to-blue-300"></div>
             </div>
           </div>
-          <div className="rounded-lg border bg-card text-card-foreground shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
+          <div className="rounded-lg border border-gray-300/60 bg-white text-card-foreground shadow-sm relative text-center group hover:shadow-lg transition-shadow duration-300">
             <div className="flex flex-col space-y-1.5 p-6">
               <div className="relative mx-auto mb-4">
                 <div className="bg-black p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
@@ -133,7 +133,7 @@ export function Howitworks() {
           <h3 className="text-xl font-semibold text-foreground mb-2">
             Reliable &amp; Secure
           </h3>
-          <p className="text-muted-foreground">
+          <p className="text-slate-500">
             Your data is protected with industry-standard security measures. We
             only use your information to provide case alerts and never share it
             with third parties.

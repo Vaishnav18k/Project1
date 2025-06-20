@@ -14,7 +14,7 @@ export function Contact() {
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="rounded-lg border bg-card text-card-white shadow-sm">
+          <div className="rounded-lg border border-gray-300/60 bg-white  text-card-white shadow-sm">
             <div className="flex flex-col space-y-1.5 p-6">
               <h3 className="text-2xl font-semibold leading-none tracking-tight flex items-center space-x-2">
                 <svg
@@ -105,7 +105,7 @@ export function Contact() {
             </div>
           </div>
           <div className="space-y-6">
-            <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
+            <div className="rounded-lg border border-gray-300/60 bg-white text-card-foreground shadow-sm">
               <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="text-2xl font-semibold leading-none tracking-tight flex items-center space-x-2">
                   <svg
@@ -141,7 +141,7 @@ export function Contact() {
                 </p>
               </div>
             </div>
-            <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
+            <div className="rounded-lg border border-gray-300/60 bg-white text-card-foreground shadow-sm">
               <div className="flex flex-col space-y-1.5 p-6">
                 <h3 className="text-2xl font-semibold leading-none tracking-tight">
                   Frequently Asked Questions

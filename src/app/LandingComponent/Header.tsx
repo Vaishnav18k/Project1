@@ -42,25 +42,25 @@ export function Header() {
               <nav className="hidden md:flex space-x-6">
                 <Link
                   href="#hero"
-                  className="text-muted-red-400 hover:text-black transition-colors"
+                  className="text-gray-600 hover:text-black transition-colors"
                 >
                   Home
                 </Link>
                 <Link
                   href="/dashboard"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-gray-600 hover:text-black transition-colors"
                 >
                   Dashboard
                 </Link>
                 <Link
                   href="#how-it-works"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-gray-600 hover:text-black transition-colors"
                 >
                   How It Works
                 </Link>
                 <Link
                   href="#contact"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="text-gray-600 hover:text-black transition-colors"
                 >
                   Contact Us
                 </Link>

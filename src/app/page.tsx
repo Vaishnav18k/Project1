@@ -77,7 +77,7 @@ export default function Home() {
               {!user && (
                 <Link 
                   href="/signin"
-                  className="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-black text-white hover:bg-white/20 h-9 rounded-md px-3 space-x-2"
+                  className="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-black text-white hover:bg-primary/90 h-9 rounded-md px-3 space-x-2"
                 >
                   <User className="h-4 w-4" />
                   <span>Sign In</span>
