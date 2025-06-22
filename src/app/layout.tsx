@@ -3,7 +3,9 @@ import { StackProvider, StackTheme } from "@stackframe/stack";
 import { stackServerApp } from "../stack";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import  "../../convex/_generated/api";
+import { ConvexClientProvider } from "./ConvexClientProvider";
+import { ConvexProvider } from "convex/react";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,9 +30,14 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      ><StackProvider app={stackServerApp}><StackTheme>
+      ><StackProvider app={stackServerApp}>
+         <ConvexClientProvider>
+          <StackTheme>
         {children}
-      </StackTheme></StackProvider></body>
+      </StackTheme>
+      </ConvexClientProvider>
+      </StackProvider>
+      </body>
     </html>
   );
 }
