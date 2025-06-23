@@ -28,7 +28,7 @@ export function Header() {
   return (
    
       <header className="bg-white  border-border sticky top-0 z-50 shadow-sm">
-          <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <div className="container mx-auto px-3 py-4 flex justify-between items-center">
             <div className="flex items-center space-x-3">
               <div className="bg-black p-2 rounded-lg">
                 <Scale className="h-6 w-6 text-white" />
@@ -40,7 +40,7 @@ export function Header() {
                 Case Alert System
               </Link>
             </div>
-            <div className="flex items-center space-x-6">
+            <div className="flex items-center space-x-8">
               <nav className="hidden md:flex space-x-6">
                 <Link
                   href="/home"
@@ -54,20 +54,12 @@ export function Header() {
                 >
                   Dashboard
                 </Link>
-                <Link
-                  href="#how-it-works"
-                  className="text-gray-600 hover:text-black transition-colors"
-                >
-                  How It Works
-                </Link>
-                <Link
-                  href="#contact"
-                  className="text-gray-600 hover:text-black transition-colors"
-                >
-                  Contact Us
-                </Link>
+              
+                 <UserButton />
+               
+             
                 
-                <UserButton />
+               
               </nav>
               <div className="flex items-center space-x-3">
                 {!user && (
@@ -79,6 +71,10 @@ export function Header() {
                     <span>Sign In</span>
                   </Link>
                 )}
+                
+              </div>
+              <div>
+
               </div>
             </div>
           </div>

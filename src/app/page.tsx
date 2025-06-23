@@ -24,7 +24,7 @@ export default function Home() {
 
   useEffect(() => {
     if (user) {
-      router.push("/home");
+      router.push("/dashboard");
     }
   }, [user, router]);
 

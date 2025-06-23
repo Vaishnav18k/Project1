@@ -221,8 +221,7 @@ const handleDelete = async (id: string) => {
 {/* End of Alert Preferences List */}
       </div>
       </div>
-      <Howitworks />
-      <Contact />
+     
       <Footer />
     </div>
   );
